@@ -14,9 +14,22 @@ namespace ProblemTests
         }
 
         [TestMethod]
+        public void Test_Problem1()
+        {
+            Test(new Problem1());
+        }
+
+        [TestMethod]
         public void Test_Problem2()
         {
             Test(new Problem2());            
         }
+
+        [TestMethod]
+        public void Test_Problem3()
+        {
+            Test(new Problem3());
+        }
+
     }
 }

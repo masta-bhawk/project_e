@@ -37,7 +37,7 @@ namespace Project_E
             return (int)max;
         }
 
-        public static bool IsPrime(long number)
+        private bool IsPrime(long number)
         {
             if (number == 1) return false;
             if (number == 2 || number == 3 || number == 5) return true;
@@ -89,7 +89,7 @@ namespace Project_E
         }
 
 
-        public List<long> Factor(long number)
+        private IEnumerable<long> Factor(long number)
         {
             List<long> factors = new List<long>();
             long max = (long)Math.Sqrt(number);  //round down
